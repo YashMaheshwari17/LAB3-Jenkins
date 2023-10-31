@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        PATH = "D:\Software\apache-maven-3.9.5\bin$PATH"
+        PATH = "D:\\Software\\apache-maven-3.9.5\\bin$PATH"
         // Add other environment variables as needed
     }
     stages {
@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat "C:\WINDOWS\system32\cmd.exe /c mvn clean test"
+                bat "C:\\WINDOWS\\system32\\cmd.exe /c mvn clean test"
             }
         }
     }
