@@ -10,6 +10,7 @@ pipeline {
                 checkout scm
             }
         }
+        
         stage('Build') {
             steps {
                 bat "C:\\WINDOWS\\system32\\cmd.exe /c mvn clean test"
